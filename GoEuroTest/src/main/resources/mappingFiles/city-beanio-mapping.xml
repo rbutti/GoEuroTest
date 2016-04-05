@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beanio xmlns="http://www.beanio.org/2012/03">
+	<stream name="city" format="csv">
+		<record name="city" class="com.goeuro.javatest.loc2csv.domain.City">
+			<field name="_id" />
+			<field name="name" />
+			<field name="type" />
+			<segment name="geoPosition"
+				class="com.goeuro.javatest.loc2csv.domain.GeoPosition">
+				<field name="longitude" />
+				<field name="latitude" />
+			</segment>
+		</record>
+	</stream>
+</beanio>
